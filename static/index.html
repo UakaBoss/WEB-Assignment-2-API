@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Weather App</title>
+</head>
+<body>
+    <img id="weatherImage" alt="" style="max-width: 100%; height: auto;">
+    <div id="container">
+        <div id="menu">
+            <form id="weatherForm">
+                <input type="text" id="cityInput" name="city" placeholder="Enter city name" required>
+                <button type="submit">Get Forecast</button>
+                <div id="weatherInfo"></div>
+            </form>
+        </div>
+        <div id="map"></div>
+    </div>
+    <div id="newsSection"></div>
+    <footer>
+        <p>Kamarov Ualikhan | SE-2211</p>
+    </footer>
+</body>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="weather.js"></script>
+</html>
